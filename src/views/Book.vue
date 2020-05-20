@@ -22,7 +22,7 @@ export default {
     },
     computed: {
         book(){
-            return this.$root.centralBooks.find(book => book.id == this.bookId);
+            return this.$store.state.books.find(book => book.id == this.bookId);
         }
     }
 }

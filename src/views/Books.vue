@@ -17,7 +17,7 @@ export default {
     },
     computed: {
         books(){
-            return this.$root.centralBooks
+            return this.$store.state.books;
         }
     }
 }
