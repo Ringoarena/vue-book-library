@@ -1,21 +1,19 @@
 <template>
 <article>
-    <router-link v-bind:to="'/'"><button>Back</button></router-link>
+    <router-link :to="{ name: 'books'}"><button>Back</button></router-link>
     <bookCover v-bind:book="book"/>
-    <section class="details">
-        <h1>{{book.title}}</h1>
-        <p>By {{book.author}}</p>
-        <p>{{book.plot}}</p>
-    </section>
+    <bookDetails v-bind:book="book"/>
 </article>
 </template>
 
 <script>
 import BookCover from '@/components/BookCover.vue'
+import BookDetails from '@/components/BookDetails.vue'
 
 export default {
     components: {
-        bookCover: BookCover
+        bookCover: BookCover,
+        bookDetails: BookDetails
     },
     data(){
         return {

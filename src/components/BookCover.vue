@@ -1,7 +1,10 @@
 <template>
-  <article class="cover" v-bind:style="{background: book.color}">
+  <article class="cover" :style="{background: book.color}">
+    <div class="line"></div>
+    <div class="intro">
       <h1>{{book.title}}</h1>
       <h5>{{book.author}}</h5>
+    </div>
   </article>
 </template>
 
@@ -13,6 +16,8 @@ export default {
 }
 </script>
 
+
+// todo
 <style scoped>
 article {
   padding: 1rem;

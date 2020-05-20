@@ -30,6 +30,7 @@ export default {
     gap: 0.5rem;
     max-width: 1024px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 </style>
